@@ -92,7 +92,7 @@ function Login() {
         } else {
             setload(true);
 
-            axios.post("http://cleanegypt.runasp.net/api/admins/login", adminData)
+            axios.post("https://cleanegypt.runasp.net/api/admins/login", adminData)
                 .then(res => {
                     console.log(res.data.value.token);
                     setload(false)
@@ -100,7 +100,7 @@ function Login() {
                     nav("/");
                 }).catch(err => {
                     setload(false);
-                    console.log(err);
+                    console.log(err.response);
                     // console.log(err.response);
                     // setServerErr(err.response.data?.detail);
                     // console.log(err.response);
