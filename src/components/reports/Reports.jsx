@@ -7,7 +7,7 @@ function Reports() {
             marginLeft: '250px',
         }} className="px-10 mt-10">
 
-                <div className="bg-white px-4 rounded-xl overflow-hidden flex ">
+                <div className="bg-white px-4 rounded-xl overflow-hidden flex items-start">
                 <AllReports /> 
                 <ReportDetail />
 

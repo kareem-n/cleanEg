@@ -93,14 +93,15 @@ function Login() {
             setload(true);
 
             axios.post("http://cleanegypt.runasp.net/api/admins/login", adminData).then((res) => {
-                // console.log(res.data.value.token);
+                console.log(res.data.value.token);
                 setload(false)
                 localStorage.setItem("userToken", res.data.value.token);
                 nav("/");
             }).catch(err => {
                 setload(false);
-                setServerErr(err.response.data.detail);
                 console.log(err.response);
+                setServerErr(err.response.data?.detail);
+                // console.log(err.response);
             })
         }
     }
