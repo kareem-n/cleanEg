@@ -1,7 +1,7 @@
 
 function ReportDetail() {
     return (
-        <div className="mt-10 py-10 px-20 w-full">
+        <div className="py-10 px-20 w-full border-l-2">
             <div className="flex items-center gap-x-5">
                 <img src="" className="w-20 h-20 rounded-full object-cover" alt="" />
                 <h2>Name </h2>

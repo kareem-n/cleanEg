@@ -100,7 +100,7 @@ function Login() {
                     nav("/");
                 }).catch(err => {
                     setload(false);
-                    console.log(err.response);
+                    console.log(err);
                     // console.log(err.response);
                     // setServerErr(err.response.data?.detail);
                     // console.log(err.response);
@@ -139,7 +139,7 @@ function Login() {
                         dataErrors && <div className="bg-red-500 text-white px-4 py-1 mt-1 rounded-lg">
                             {
                                 dataErrors.map(error => {
-                                    if (error.path[0] === 'username') {
+                                    if (error.path[0] === 'email') {
                                         return error.message;
                                     }
                                 })

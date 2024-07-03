@@ -10,12 +10,12 @@ function AllReports() {
 
     useEffect(() => {
 
-        axios.get("http://cleanegypt.runasp.net/api/pins")
-            .then(res => {
-                console.log(res.data);
-                setReportsData(res.data);
+        // axios.get("http://cleanegypt.runasp.net/api/pins")
+        //     .then(res => {
+        //         console.log(res.data);
+        //         setReportsData(res.data);
 
-            })
+        //     })
 
 
 
@@ -27,7 +27,7 @@ function AllReports() {
             style={{
                 width: '400px'
             }}
-            className='border-r-2 py-8'
+            className='py-8'
         >
             <h2 className='font-bold text-xl'>Reports This Week</h2>
             {

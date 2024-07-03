@@ -12,10 +12,7 @@ function Reports() {
                 <ReportDetail />
 
                 </div>
-
-
         </div>
     )
 }
-
 export default Reports

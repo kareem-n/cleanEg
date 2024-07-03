@@ -41,12 +41,15 @@ function App() {
                 </ProtectRoute>
               }
             />
+            <Route
+            path="/create-admin"
+            element={
+              <ProtectRoute>
+                <CreateAdmin />
+              </ProtectRoute>
+            }
+          />
           </Route>
-
-
-          <Route path="/createAdmin" element={<ProtectRoute>
-            <CreateAdmin /> 
-          </ProtectRoute> } />
           <Route path="/login" element={<Login />} />
         </Route>
       </Routes>

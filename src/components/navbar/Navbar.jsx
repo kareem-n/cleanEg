@@ -1,7 +1,7 @@
 import { FaSearch } from "react-icons/fa"
 import { IoIosNotifications } from "react-icons/io";
 import { FaEnvelope } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
@@ -24,6 +24,11 @@ function Navbar() {
             </div>
 
             <div className="flex items-center ">
+
+                    <Link to={'/create-admin'} className="mr-3 underline hover:text-green-600">
+                        Create Admin
+                    </Link>
+
                 <div className="relative">
                     <IoIosNotifications color="#457E61" size={30} />
                     <span className="absolute block w-2 h-2 rounded-full bg-red-500 top-0 right-0"></span>
